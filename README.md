@@ -82,8 +82,8 @@ Next.js App Router fundamentals (read-only reference).
 
 Routing, layouts, server/client components, data fetching, API routes, metadata, middleware.
 
-### 5. Practice folder
-Your space to write and experiment with what you learn.
+### 5. Practice folder (local only)
+Your personal space to write and experiment — **not pushed to GitHub**. Create `Practice folder/` on your machine and add your own files there.
 
 ---
 
