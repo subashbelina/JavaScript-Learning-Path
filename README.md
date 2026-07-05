@@ -1,5 +1,7 @@
 # Js-Learning-Path
 
+> **Repository:** [github.com/subashbelina/JavaScript-Learning-Path](https://github.com/subashbelina/JavaScript-Learning-Path)
+
 A **read-and-learn** JavaScript roadmap for beginners and self-taught developers. Each topic lives in its own folder with small, focused files — one concept per file, clear comments, and syntax examples.
 
 No npm install. No project setup. Just open the files and study.
