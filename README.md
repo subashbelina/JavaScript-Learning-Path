@@ -24,6 +24,7 @@ No npm install. No project setup. Just open the files and study.
    node "JavaScript Fundamental/Variables/let-const.js"
    node "Modern-JavaScript/optional-chaining.js"
    node "JavaScript library /React/intro.js"
+   node "Nodejs/intro.js"
    ```
 5. **DOM basics** — open `JavaScript Fundamental/DOM-basics/index.html` in a browser
 
@@ -82,7 +83,30 @@ Next.js App Router fundamentals (read-only reference).
 
 Routing, layouts, server/client components, data fetching, API routes, metadata, middleware.
 
-### 5. Practice folder (local only)
+### 5. Nodejs
+Node.js runtime, built-in modules, and backend patterns (read-only reference).
+
+| File | Topic |
+|------|-------|
+| `intro.js` | What is Node.js, learning map |
+| `commonjs-modules.js` | require & module.exports |
+| `es-modules.js` | import/export in Node |
+| `file-system.js` | fs read, write, directories |
+| `path-module.js` | join, resolve, basename, extname |
+| `http-server.js` | createServer, routes, responses |
+| `events-emitter.js` | EventEmitter, on, emit, once |
+| `streams.js` | readable, writable, pipe, pipeline |
+| `process-env.js` | process.env, argv, exit |
+| `os-module.js` | platform, CPU, memory, homedir |
+| `url-module.js` | URL, searchParams |
+| `crypto-basics.js` | hash, randomBytes, UUID |
+| `buffer.js` | binary data, encoding |
+| `async-patterns.js` | callbacks, promises, async/await |
+| `error-handling.js` | err.code, custom errors |
+| `child-process.js` | exec, spawn, execFile |
+| `npm-basics.js` | package.json, install, scripts |
+
+### 6. Practice folder (local only)
 Your personal space to write and experiment — **not pushed to GitHub**. Create `Practice folder/` on your machine and add your own files there.
 
 ---
@@ -93,6 +117,7 @@ Your personal space to write and experiment — **not pushed to GitHub**. Create
 - Modern JS (ES6, ES2020, ES2022+)
 - React component patterns and hooks
 - Next.js full-stack concepts
+- Node.js server-side JavaScript, built-in modules, and npm
 - DOM manipulation and async programming
 
 ---
