@@ -16,7 +16,7 @@ You do not need to know JavaScript already. Start at `01-JavaScript Core fundame
 |------|------------|
 | 1 | Install [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/) and open this folder |
 | 2 | Open `01-JavaScript Core fundamentals/Data-types/string.js` |
-| 3 | Follow folders **01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09** in order |
+| 3 | Follow folders **01 → 02 → … → 13** in order |
 | 4 | Practice in the local `practice/` folder (not tracked by git) |
 
 **Optional — run a file in the terminal:**
@@ -31,6 +31,10 @@ node 06-Express/intro.js
 node 07-Database/intro.js
 node 08-Auth/intro.js
 node 09-TypeScript/intro.js
+node 10-Projects/intro.js
+node 11-Git-GitHub/intro.js
+node 12-Testing/intro.js
+node 13-Deployment/intro.js
 ```
 
 **DOM basics — open in a browser:**
@@ -56,6 +60,10 @@ Js-Learning-Path/
 ├── 07-Database/                       ← SQL, MongoDB, CRUD
 ├── 08-Auth/                           ← Login, JWT, protected routes
 ├── 09-TypeScript/                     ← Types, interfaces, generics
+├── 10-Projects/                       ← Full-stack todo app guide
+├── 11-Git-GitHub/                     ← Version control workflow
+├── 12-Testing/                        ← Jest and unit tests
+├── 13-Deployment/                     ← Publish your app online
 └── practice/                          ← Your experiments (local only)
 ```
 
@@ -70,6 +78,10 @@ Js-Learning-Path/
 | 07 | Database | SQL, MongoDB, CRUD, relationships | 1 week |
 | 08 | Auth | Passwords, JWT, login, protected routes | 1 week |
 | 09 | TypeScript | Types, interfaces, generics | 1–2 weeks |
+| 10 | Projects | Full-stack todo app (ties 03–08 together) | 2 weeks |
+| 11 | Git-GitHub | commit, branch, push, pull requests | 3–5 days |
+| 12 | Testing | Unit tests, mocks, Jest setup | 3–5 days |
+| 13 | Deployment | Vercel, Railway, go live | 3–5 days |
 
 ### 05 — Nodejs (read in this order)
 
@@ -203,6 +215,89 @@ node 09-TypeScript/interfaces.js
 
 Real TypeScript: `npm install typescript && npx tsc --init` in `practice/`
 
+### 10 — Projects (read in this order)
+
+Study **after** folders 03–09. Build a todo app that combines everything.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | Why projects matter |
+| 2 | `todo-plan.js` | Plan routes and data first |
+| 3 | `todo-api.js` | Todo CRUD backend |
+| 4 | `todo-with-auth.js` | Per-user todos |
+| 5 | `todo-react.js` | Frontend fetch pattern |
+| 6 | `full-stack-flow.js` | Browser → API → DB flow |
+| 7 | `project-structure.js` | Folder layout for real app |
+| 8 | `build-checklist.js` | Steps to build in practice/ |
+
+```bash
+node 10-Projects/intro.js
+node 10-Projects/todo-api.js
+node 10-Projects/full-stack-flow.js
+```
+
+### 11 — Git-GitHub (read in this order)
+
+Study **after** folder 10. Version control for your projects.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What Git and GitHub are |
+| 2 | `basic-commands.js` | init, add, commit, status |
+| 3 | `branches.js` | Feature branches |
+| 4 | `push-pull.js` | Sync with GitHub |
+| 5 | `pull-requests.js` | Code review workflow |
+| 6 | `gitignore.js` | Files to never commit |
+| 7 | `daily-workflow.js` | Daily Git routine |
+| 8 | `common-mistakes.js` | Avoid beginner errors |
+
+```bash
+node 11-Git-GitHub/intro.js
+node 11-Git-GitHub/basic-commands.js
+node 11-Git-GitHub/daily-workflow.js
+```
+
+### 12 — Testing (read in this order)
+
+Study **after** folder 11. Catch bugs before users do.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | Why testing matters |
+| 2 | `mini-test-runner.js` | How expect() works |
+| 3 | `unit-tests.js` | Test one function |
+| 4 | `test-structure.js` | describe() and it() |
+| 5 | `async-tests.js` | Test async code |
+| 6 | `mock-functions.js` | Fake database in tests |
+| 7 | `api-testing.js` | Test HTTP endpoints |
+| 8 | `jest-setup.js` | Add Jest to a project |
+
+```bash
+node 12-Testing/intro.js
+node 12-Testing/mini-test-runner.js
+node 12-Testing/unit-tests.js
+```
+
+### 13 — Deployment (read in this order)
+
+Study **last**. Put your app on the internet.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What deployment means |
+| 2 | `env-production.js` | Dev vs production env |
+| 3 | `build-frontend.js` | npm run build |
+| 4 | `deploy-vercel.js` | Deploy React/Next.js |
+| 5 | `deploy-backend.js` | Deploy Express API |
+| 6 | `database-cloud.js` | MongoDB Atlas, Supabase |
+| 7 | `domain-https.js` | Custom domain and HTTPS |
+| 8 | `deploy-checklist.js` | Final checks before go-live |
+
+```bash
+node 13-Deployment/intro.js
+node 13-Deployment/deploy-checklist.js
+```
+
 ### First-day path (folder 01)
 
 Work through **01-JavaScript Core fundamentals** using the full order in its [README](01-JavaScript%20Core%20fundamentals/README.md). A good start for day one:
@@ -232,7 +327,11 @@ Stop when your brain feels full. Come back tomorrow.
 | 06 — Express | Folder `07-Database` (see README) |
 | 07 — Database | Folder `08-Auth` (see README) |
 | 08 — Auth | Folder `09-TypeScript` (see README) |
-| 09 — TypeScript | Build a full-stack app in `practice/` |
+| 09 — TypeScript | Folder `10-Projects` (see README) |
+| 10 — Projects | Folder `11-Git-GitHub` (see README) |
+| 11 — Git-GitHub | Folder `12-Testing` (see README) |
+| 12 — Testing | Folder `13-Deployment` (see README) |
+| 13 — Deployment | You are job-ready — keep building in `practice/`! |
 
 ---
 
@@ -252,7 +351,7 @@ Every `.js` file follows the same pattern:
 4. Run the file and compare with your guess
 5. Change one value and run again
 
-React and Next.js files show **syntax reference** in comments — read them like a textbook. Folders **05–09** are runnable with `node`, like folder 01.
+React and Next.js files show **syntax reference** in comments — read them like a textbook. Folders **05–13** are runnable with `node`, like folder 01.
 
 ---
 
@@ -318,6 +417,7 @@ main();
 - Node.js server-side JavaScript, built-in modules, and npm
 - Express REST APIs, routing, and middleware
 - Databases (SQL, MongoDB), auth (JWT), and TypeScript
+- Full-stack projects, Git, testing, and deployment
 - DOM manipulation and async programming
 
 ---
@@ -332,7 +432,7 @@ main();
 
 ## Tips for New Developers
 
-- **Go in order.** Follow 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09.
+- **Go in order.** Follow 01 → 02 → … → 13.
 - **One file at a time.** Do not rush through a whole folder in one sitting.
 - **Type the code yourself.** Copy-pasting teaches less than typing and tweaking.
 - **Break things on purpose.** Change values, comment out lines, see what happens.
@@ -352,7 +452,7 @@ Helpful but not required. Files with real code examples benefit most from runnin
 No. Those files are **syntax references** — read them like textbook pages. You will run real React/Next apps when you build a project later.
 
 **How long does the full path take?**
-Roughly 6–10 weeks at a steady pace. There is no deadline — go at your own speed.
+Roughly 10–14 weeks at a steady pace. There is no deadline — go at your own speed.
 
 ---
 
