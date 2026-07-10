@@ -6,7 +6,7 @@ A **read-and-learn** JavaScript roadmap for beginners and self-taught developers
 
 **No npm install. No project setup. Just open the files and study.**
 
-You do not need to know JavaScript already. Start at `JavaScript Core fundamentals` and move forward when you feel comfortable.
+You do not need to know JavaScript already. Start at `01-JavaScript Core fundamentals` and follow the numbered folders in order.
 
 ---
 
@@ -15,75 +15,118 @@ You do not need to know JavaScript already. Start at `JavaScript Core fundamenta
 | Step | What to do |
 |------|------------|
 | 1 | Install [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/) and open this folder |
-| 2 | Open `JavaScript Core fundamentals/Data-types/string.js` |
-| 3 | Follow the folders in order (Core fundamentals → Modern JS → React → Next.js → Nodejs) |
+| 2 | Open `01-JavaScript Core fundamentals/Data-types/string.js` |
+| 3 | Follow folders **01 → 02 → 03 → 04 → 05 → 06** in order |
 | 4 | Practice in the local `practice/` folder (not tracked by git) |
 
 **Optional — run a file in the terminal:**
 
 ```bash
-node "JavaScript Core fundamentals/Data-types/string.js"
-node "JavaScript Core fundamentals/Variables/let-const.js"
-node "Modern JavaScript/optional-chaining.js"
-node React/intro.js
-node Nodejs/intro.js
+node "01-JavaScript Core fundamentals/Data-types/string.js"
+node "01-JavaScript Core fundamentals/Variables/let-const.js"
+node "02-Modern JavaScript/optional-chaining.js"
+node 03-React/intro.js
+node 05-Nodejs/intro.js
+node 06-Express/intro.js
 ```
 
 **DOM basics — open in a browser:**
 
 ```bash
-open "JavaScript Core fundamentals/DOM-basics/index.html"
+open "01-JavaScript Core fundamentals/DOM-basics/index.html"
 ```
 
 ---
 
 ## Learning Path
 
-Follow the folders top to bottom. Each folder has its own `README.md` with a recommended file order.
+Follow the numbered folders top to bottom. Each folder has its own `README.md` with a recommended file order.
 
 ```
 Js-Learning-Path/
-├── JavaScript Core fundamentals/   ← Core language (start here)
-├── Modern JavaScript/              ← ES6+ features
-├── React/                          ← React library concepts
-├── Next.js/                        ← Next.js framework
-├── Nodejs/                         ← Node.js runtime & backend
-└── practice/                       ← Your experiments (local only)
+├── 01-JavaScript Core fundamentals/   ← Start here
+├── 02-Modern JavaScript/              ← ES6+ features
+├── 03-React/                          ← React library
+├── 04-Next.js/                        ← Next.js framework
+├── 05-Nodejs/                         ← Node.js runtime & backend
+├── 06-Express/                        ← Express.js web framework
+└── practice/                          ← Your experiments (local only)
 ```
 
 | # | Folder | What you'll learn | Time estimate |
 |---|--------|-------------------|---------------|
-| 1 | [JavaScript Core fundamentals](JavaScript%20Core%20fundamentals/README.md) | Variables, functions, arrays, async, DOM | 2–4 weeks |
-| 2 | [Modern JavaScript](Modern%20JavaScript/README.md) | Optional chaining, Set/Map, generators | 1 week |
-| 3 | [React](React/README.md) | Components, JSX, hooks, state | 1–2 weeks |
-| 4 | [Next.js](Next.js/README.md) | Routing, server components, API routes | 1–2 weeks |
-| 5 | Nodejs | Server-side JS, built-in modules, npm | 1–2 weeks |
+| 01 | [JavaScript Core fundamentals](01-JavaScript%20Core%20fundamentals/README.md) | Variables, functions, arrays, async, DOM | 2–4 weeks |
+| 02 | [Modern JavaScript](02-Modern%20JavaScript/README.md) | Optional chaining, Set/Map, generators | 1 week |
+| 03 | [React](03-React/README.md) | Components, JSX, hooks, state | 1–2 weeks |
+| 04 | [Next.js](04-Next.js/README.md) | Routing, server components, API routes | 1–2 weeks |
+| 05 | Nodejs | Server-side JS, built-in modules, npm | 1–2 weeks |
+| 06 | Express | REST APIs, routing, middleware | 1 week |
 
-### Nodejs topics
+### 05 — Nodejs (read in this order)
 
-| File | Topic |
-|------|-------|
-| `intro.js` | What is Node.js, learning map |
-| `commonjs-modules.js` | require & module.exports |
-| `es-modules.js` | import/export in Node |
-| `file-system.js` | fs read, write, directories |
-| `path-module.js` | join, resolve, basename, extname |
-| `http-server.js` | createServer, routes, responses |
-| `events-emitter.js` | EventEmitter, on, emit, once |
-| `streams.js` | readable, writable, pipe, pipeline |
-| `process-env.js` | process.env, argv, exit |
-| `os-module.js` | platform, CPU, memory, homedir |
-| `url-module.js` | URL, searchParams |
-| `crypto-basics.js` | hash, randomBytes, UUID |
-| `buffer.js` | binary data, encoding |
-| `async-patterns.js` | callbacks, promises, async/await |
-| `error-handling.js` | err.code, custom errors |
-| `child-process.js` | exec, spawn, execFile |
-| `npm-basics.js` | package.json, install, scripts |
+Study **after** folders 01–04. You need JavaScript basics, async/await, and HTTP concepts first.
 
-### First-day path
+**Mental model:** Browser JS has `document` and `DOM`. Node.js has `fs`, `path`, `http`, and `process`. Same language, different environment.
 
-Work through **JavaScript Core fundamentals** using the full order in its [README](JavaScript%20Core%20fundamentals/README.md). A good start for day one:
+| Phase | # | File | What you learn |
+|-------|---|------|----------------|
+| **1 — Understand Node** | 1 | `intro.js` | What Node.js is |
+| | 2 | `npm-basics.js` | package.json, scripts, dependencies |
+| | 3 | `commonjs-modules.js` | require() and module.exports |
+| | 4 | `async-patterns.js` | Callbacks, promises, async/await |
+| | 5 | `process-env.js` | process.env, argv, platform |
+| **2 — Files & Paths** | 6 | `path-module.js` | join, resolve, basename, extname |
+| | 7 | `file-system.js` | Read, write, delete files (fs) |
+| | 8 | `error-handling.js` | try/catch, err.code |
+| **3 — Build a Server** | 9 | `es-modules.js` | import/export in Node |
+| | 10 | `http-server.js` | Basic HTTP server |
+| | 11 | `url-module.js` | Parse URLs and query strings |
+| | 12 | `events-emitter.js` | on, emit, once |
+| **4 — Advanced** | 13 | `buffer.js` | Binary data |
+| | 14 | `streams.js` | Data in chunks |
+| | 15 | `os-module.js` | CPU, memory, platform |
+| | 16 | `crypto-basics.js` | Hashing, random bytes |
+| | 17 | `child-process.js` | Run shell commands |
+
+```bash
+node 05-Nodejs/intro.js
+node 05-Nodejs/path-module.js
+node 05-Nodejs/file-system.js
+node 05-Nodejs/events-emitter.js
+```
+
+### 06 — Express (read in this order)
+
+Study **after** folder 05. Express builds on Node.js `http` to make APIs easier.
+
+**Mental model:** Node `http` = manual wiring. Express = `app.get()`, `res.json()`, middleware chain.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What Express is |
+| 2 | `setup.js` | Create app and listen on a port |
+| 3 | `routing.js` | GET, POST routes |
+| 4 | `route-params.js` | Dynamic `:id` segments |
+| 5 | `query-params.js` | `?role=admin&page=1` filters |
+| 6 | `json-body.js` | POST body with `express.json()` |
+| 7 | `middleware.js` | Functions that run before routes |
+| 8 | `router.js` | Split routes into modules |
+| 9 | `static-files.js` | Serve HTML, CSS, images |
+| 10 | `error-handling.js` | Catch and return errors |
+| 11 | `rest-api.js` | Full CRUD API pattern |
+
+```bash
+node 06-Express/intro.js
+node 06-Express/routing.js
+node 06-Express/middleware.js
+node 06-Express/rest-api.js
+```
+
+To run a real Express server: `mkdir practice/my-api && cd practice/my-api && npm init -y && npm install express`
+
+### First-day path (folder 01)
+
+Work through **01-JavaScript Core fundamentals** using the full order in its [README](01-JavaScript%20Core%20fundamentals/README.md). A good start for day one:
 
 | Order | File | Topic |
 |-------|------|-------|
@@ -102,11 +145,12 @@ Stop when your brain feels full. Come back tomorrow.
 
 | When you finish… | Go to… |
 |------------------|--------|
-| JavaScript Core fundamentals | [Modern JavaScript](Modern%20JavaScript/README.md) |
-| Modern JS topics | [React](React/README.md) |
-| React concepts | [Next.js](Next.js/README.md) |
-| Next.js concepts | `Nodejs/` |
-| Everything | Build a real project with Vite, Create Next App, or Express |
+| 01 — JavaScript Core fundamentals | [02 — Modern JavaScript](02-Modern%20JavaScript/README.md) |
+| 02 — Modern JavaScript | [03 — React](03-React/README.md) |
+| 03 — React | [04 — Next.js](04-Next.js/README.md) |
+| 04 — Next.js | Folder `05-Nodejs` (see README) |
+| 05 — Nodejs | Folder `06-Express` (see README) |
+| 06 — Express | Build a real API in `practice/` with `npm install express` |
 
 ---
 
@@ -126,7 +170,7 @@ Every `.js` file follows the same pattern:
 4. Run the file and compare with your guess
 5. Change one value and run again
 
-React, Next.js, and Nodejs files show **syntax reference** in comments and template strings — they are not runnable apps. Read them like a textbook.
+React and Next.js files show **syntax reference** in comments — read them like a textbook. **05-Nodejs** and **06-Express** files are runnable with `node`, like folder 01.
 
 ---
 
@@ -190,6 +234,7 @@ main();
 - React component patterns and hooks
 - Next.js full-stack concepts
 - Node.js server-side JavaScript, built-in modules, and npm
+- Express REST APIs, routing, and middleware
 - DOM manipulation and async programming
 
 ---
@@ -204,7 +249,7 @@ main();
 
 ## Tips for New Developers
 
-- **Go in order.** Fundamentals before React. React before Next.js.
+- **Go in order.** Follow 01 → 02 → 03 → 04 → 05 → 06.
 - **One file at a time.** Do not rush through a whole folder in one sitting.
 - **Type the code yourself.** Copy-pasting teaches less than typing and tweaking.
 - **Break things on purpose.** Change values, comment out lines, see what happens.

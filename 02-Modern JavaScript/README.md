@@ -1,6 +1,6 @@
-# Modern JavaScript
+# 02 — Modern JavaScript
 
-ES6+ and newer language features. Read this **after** completing **JavaScript Core fundamentals**.
+ES6+ and newer language features. Read this **after** completing **01-JavaScript Core fundamentals**.
 
 These files cover syntax added after ES5 (2015). Each file is self-contained — read them in any order, but `intro.js` is a good starting point.
 
@@ -35,8 +35,8 @@ These files cover syntax added after ES5 (2015). Each file is self-contained —
 4. Try using the syntax in your `practice/` folder
 
 ```bash
-node "Modern JavaScript/intro.js"
-node "Modern JavaScript/optional-chaining.js"
+node "02-Modern JavaScript/intro.js"
+node "02-Modern JavaScript/optional-chaining.js"
 ```
 
 ---
@@ -58,6 +58,6 @@ node "Modern JavaScript/optional-chaining.js"
 
 When you understand modern syntax, move to:
 
-**[React](../React/README.md)**
+**[03-React](../03-React/README.md)**
 
 React files are **read-only syntax references** — you study the patterns here, then build a real app later with Vite or Create React App.

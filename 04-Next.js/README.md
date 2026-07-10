@@ -1,6 +1,6 @@
-# Next.js
+# 04 — Next.js
 
-Next.js is a **React framework for production web apps**. Study these files **after** **JavaScript Core fundamentals**, **Modern JavaScript**, and **React**.
+Next.js is a **React framework for production web apps**. Study these files **after** **01**, **02**, and **03**.
 
 > **Note:** These are syntax references. To build a real app later, run: `npx create-next-app@latest`
 
@@ -59,8 +59,8 @@ app/
 4. When ready, scaffold a real project and try one concept at a time
 
 ```bash
-node Next.js/intro.js
-node Next.js/routing.js
+node 04-Next.js/intro.js
+node 04-Next.js/routing.js
 ```
 
 ---
@@ -74,7 +74,7 @@ You have covered:
 - React components and hooks
 - Next.js routing and server features
 
-**Next:** Build a small project (todo app, blog, portfolio) using Create Next App and apply what you learned.
+**Next:** Move to folder **05-Nodejs** (see main [README.md](../README.md)).
 
 ---
 

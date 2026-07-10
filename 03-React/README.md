@@ -1,6 +1,6 @@
-# React
+# 03 — React
 
-React is a **JavaScript library for building user interfaces**. Study these files **after** **JavaScript Core fundamentals** and **Modern JavaScript**.
+React is a **JavaScript library for building user interfaces**. Study these files **after** **01-JavaScript Core fundamentals** and **02-Modern JavaScript**.
 
 > **Note:** These files are syntax references, not runnable apps. Read them like a textbook. You will write real React code when you create a project with Vite or Create React App.
 
@@ -61,8 +61,8 @@ function Greeting({ name }) {          // props
 4. When ready, create a real project: `npm create vite@latest my-app -- --template react`
 
 ```bash
-node React/intro.js
-node React/state.js
+node 03-React/intro.js
+node 03-React/state.js
 ```
 
 ---
@@ -79,6 +79,6 @@ node React/state.js
 
 When you understand components, props, state, and hooks, move to:
 
-**[Next.js](../Next.js/README.md)**
+**[04-Next.js](../04-Next.js/README.md)**
 
 Next.js builds on React and adds routing, server rendering, and full-stack features.

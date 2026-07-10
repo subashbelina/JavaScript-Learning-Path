@@ -1,4 +1,4 @@
-# JavaScript Core fundamentals
+# 01 — JavaScript Core fundamentals
 
 Core JavaScript from scratch. **Start here if you are new.**
 
@@ -103,7 +103,7 @@ Each subfolder covers one topic. Open files in the order listed below — earlie
 
 ### Optional Deep Dives
 
-These are useful but not required before moving to **Modern JavaScript**:
+These are useful but not required before moving to **02-Modern JavaScript**:
 
 | File | Topic |
 |------|-------|
@@ -138,9 +138,9 @@ These are useful but not required before moving to **Modern JavaScript**:
 
 ```bash
 # From the project root:
-node "JavaScript Core fundamentals/Variables/let-const.js"
-node "JavaScript Core fundamentals/Array-methods/map.js"
-node "JavaScript Core fundamentals/Async-await/async-await.js"
+node "01-JavaScript Core fundamentals/Variables/let-const.js"
+node "01-JavaScript Core fundamentals/Array-methods/map.js"
+node "01-JavaScript Core fundamentals/Async-await/async-await.js"
 ```
 
 ---
@@ -149,4 +149,4 @@ node "JavaScript Core fundamentals/Async-await/async-await.js"
 
 When you are comfortable with variables, functions, arrays, objects, and async basics, move to:
 
-**[Modern JavaScript](../Modern%20JavaScript/README.md)**
+**[02-Modern JavaScript](../02-Modern%20JavaScript/README.md)**

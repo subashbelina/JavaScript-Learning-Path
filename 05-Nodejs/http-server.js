@@ -2,17 +2,12 @@
   HTTP Server (http)
   ------------------
   Create a basic web server without Express.
-
-  Note: Read and learn only. For real apps, frameworks like Express or Fastify are common.
+  Uncomment server.listen() to start it on port 3000.
 */
 
-const httpExample = `
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // req.method  → "GET", "POST", etc.
-  // req.url     → "/users?id=1"
-
   if (req.url === "/" && req.method === "GET") {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Hello from Node.js!");
@@ -29,16 +24,9 @@ const server = http.createServer((req, res) => {
   res.end("Not Found");
 });
 
-const PORT = 3000;
-server.listen(PORT, () => {
-  console.log(\`Server running at http://localhost:\${PORT}\`);
-});
-`;
-
 console.log("--- HTTP Server ---");
-console.log("http.createServer((req, res) => { … })");
-console.log("res.writeHead(status, headers)");
-console.log("res.end(body)  — send response and close");
-console.log("server.listen(port, callback)");
-console.log("");
-console.log("Example:\n", httpExample);
+console.log("Server created:", typeof server.listen === "function");
+console.log("Routes: GET /  and  GET /api/users");
+console.log("To start: server.listen(3000, () => console.log('Running on :3000'))");
+
+// server.listen(3000, () => console.log("Running on http://localhost:3000"));
