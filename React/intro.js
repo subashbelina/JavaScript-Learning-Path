@@ -23,3 +23,6 @@ console.log("  2. JSX         — HTML-like syntax in JS");
 console.log("  3. Props       — pass data to components");
 console.log("  4. State       — data that can change");
 console.log("  5. Hooks       — useState, useEffect, etc.");
+console.log("");
+console.log("See README.md in this folder for the full learning order.");
+console.log("Next file → jsx.js");

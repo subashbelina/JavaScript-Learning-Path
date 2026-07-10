@@ -26,3 +26,6 @@ console.log("  generators.js           → function*  yield");
 console.log("  tagged-templates.js       → tagged template literals");
 console.log("  abort-controller.js     → cancel fetch");
 console.log("  numeric-separators.js   → 1_000_000");
+console.log("");
+console.log("See README.md in this folder for the recommended reading order.");
+console.log("Next file → optional-chaining.js");

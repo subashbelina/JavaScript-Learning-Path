@@ -13,3 +13,5 @@ console.log(userName);
 console.log(greeting);
 console.log(message);
 console.log(typeof userName); // "string"
+
+// Next → number.js  |  Full order: see README.md in this folder

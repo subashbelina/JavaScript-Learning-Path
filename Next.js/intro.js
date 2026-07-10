@@ -24,3 +24,6 @@ console.log("  3. Client Components      — interactivity in browser");
 console.log("  4. Data fetching          — built into components");
 console.log("  5. API routes             — backend in same project");
 console.log("  6. SEO friendly           — metadata, SSR");
+console.log("");
+console.log("See README.md in this folder for the full learning order.");
+console.log("Next file → project-structure.js");
