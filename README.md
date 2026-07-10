@@ -16,7 +16,7 @@ You do not need to know JavaScript already. Start at `JavaScript Core fundamenta
 |------|------------|
 | 1 | Install [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/) and open this folder |
 | 2 | Open `JavaScript Core fundamentals/Data-types/string.js` |
-| 3 | Follow the folders in order (Core fundamentals → Modern JS → React → Next.js) |
+| 3 | Follow the folders in order (Core fundamentals → Modern JS → React → Next.js → Nodejs) |
 | 4 | Practice in the local `practice/` folder (not tracked by git) |
 
 **Optional — run a file in the terminal:**
@@ -26,6 +26,7 @@ node "JavaScript Core fundamentals/Data-types/string.js"
 node "JavaScript Core fundamentals/Variables/let-const.js"
 node "Modern JavaScript/optional-chaining.js"
 node React/intro.js
+node Nodejs/intro.js
 ```
 
 **DOM basics — open in a browser:**
@@ -46,6 +47,7 @@ Js-Learning-Path/
 ├── Modern JavaScript/              ← ES6+ features
 ├── React/                          ← React library concepts
 ├── Next.js/                        ← Next.js framework
+├── Nodejs/                         ← Node.js runtime & backend
 └── practice/                       ← Your experiments (local only)
 ```
 
@@ -55,6 +57,29 @@ Js-Learning-Path/
 | 2 | [Modern JavaScript](Modern%20JavaScript/README.md) | Optional chaining, Set/Map, generators | 1 week |
 | 3 | [React](React/README.md) | Components, JSX, hooks, state | 1–2 weeks |
 | 4 | [Next.js](Next.js/README.md) | Routing, server components, API routes | 1–2 weeks |
+| 5 | Nodejs | Server-side JS, built-in modules, npm | 1–2 weeks |
+
+### Nodejs topics
+
+| File | Topic |
+|------|-------|
+| `intro.js` | What is Node.js, learning map |
+| `commonjs-modules.js` | require & module.exports |
+| `es-modules.js` | import/export in Node |
+| `file-system.js` | fs read, write, directories |
+| `path-module.js` | join, resolve, basename, extname |
+| `http-server.js` | createServer, routes, responses |
+| `events-emitter.js` | EventEmitter, on, emit, once |
+| `streams.js` | readable, writable, pipe, pipeline |
+| `process-env.js` | process.env, argv, exit |
+| `os-module.js` | platform, CPU, memory, homedir |
+| `url-module.js` | URL, searchParams |
+| `crypto-basics.js` | hash, randomBytes, UUID |
+| `buffer.js` | binary data, encoding |
+| `async-patterns.js` | callbacks, promises, async/await |
+| `error-handling.js` | err.code, custom errors |
+| `child-process.js` | exec, spawn, execFile |
+| `npm-basics.js` | package.json, install, scripts |
 
 ### First-day path
 
@@ -80,7 +105,8 @@ Stop when your brain feels full. Come back tomorrow.
 | JavaScript Core fundamentals | [Modern JavaScript](Modern%20JavaScript/README.md) |
 | Modern JS topics | [React](React/README.md) |
 | React concepts | [Next.js](Next.js/README.md) |
-| Everything | Build a real project with Vite or Create Next App |
+| Next.js concepts | `Nodejs/` |
+| Everything | Build a real project with Vite, Create Next App, or Express |
 
 ---
 
@@ -100,7 +126,7 @@ Every `.js` file follows the same pattern:
 4. Run the file and compare with your guess
 5. Change one value and run again
 
-React and Next.js files show **syntax reference** in comments and template strings — they are not runnable apps. Read them like a textbook.
+React, Next.js, and Nodejs files show **syntax reference** in comments and template strings — they are not runnable apps. Read them like a textbook.
 
 ---
 
@@ -154,6 +180,17 @@ main();
 ```
 
 **Practice tips:** Name files clearly (`loops-practice.js`, `objects-practice.js`). Break things on purpose. Rewrite examples from memory before peeking at the originals.
+
+---
+
+## What You Will Learn
+
+- JavaScript from scratch to job-ready fundamentals
+- Modern JS (ES6, ES2020, ES2022+)
+- React component patterns and hooks
+- Next.js full-stack concepts
+- Node.js server-side JavaScript, built-in modules, and npm
+- DOM manipulation and async programming
 
 ---
 
