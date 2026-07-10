@@ -230,13 +230,16 @@ Study **after** folders 03–09. Build a todo app that combines everything.
 | 7 | `react-project-structure.js` | React + Vite folder layout |
 | 8 | `nextjs-project-structure.js` | Next.js App Router layout |
 | 9 | `fullstack-project-structure.js` | React + Express + database |
-| 10 | `build-checklist.js` | Steps to build in practice/ |
+| 10 | `ecommerce-project-structure.js` | Shop — products, cart, Stripe |
+| 11 | `saas-project-structure.js` | Subscriptions, dashboard, billing |
+| 12 | `micro-saas-project-structure.js` | Small SaaS — one feature, fast to ship |
+| 13 | `build-checklist.js` | Pick a project and build in practice/ |
 
 ```bash
 node 10-Projects/intro.js
-node 10-Projects/todo-api.js
-node 10-Projects/react-project-structure.js
-node 10-Projects/fullstack-project-structure.js
+node 10-Projects/ecommerce-project-structure.js
+node 10-Projects/saas-project-structure.js
+node 10-Projects/micro-saas-project-structure.js
 ```
 
 ### 11 — Git-GitHub (read in this order)

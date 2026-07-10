@@ -7,26 +7,25 @@
 const projectTypes = [
   { type: "React only", file: "react-project-structure.js", cmd: "npm create vite@latest my-react-app -- --template react" },
   { type: "Next.js", file: "nextjs-project-structure.js", cmd: "npx create-next-app@latest my-next-app" },
-  { type: "Full-Stack", file: "fullstack-project-structure.js", cmd: "Separate client/ + server/ folders" },
+  { type: "Full-Stack Todo", file: "fullstack-project-structure.js", cmd: "client/ + server/ folders" },
+  { type: "E-Commerce", file: "ecommerce-project-structure.js", cmd: "Products + cart + Stripe checkout" },
+  { type: "SaaS", file: "saas-project-structure.js", cmd: "Dashboard + subscriptions + teams" },
+  { type: "Micro SaaS", file: "micro-saas-project-structure.js", cmd: "One feature + free tier + paid plan" },
 ];
 
-const fullStackSteps = [
-  "[ ] 1. Read fullstack-project-structure.js",
-  "[ ] 2. Create practice/todo-fullstack/server — npm init, npm install express",
-  "[ ] 3. Build GET and POST /api/todos",
-  "[ ] 4. Create practice/todo-fullstack/client — Vite + React",
-  "[ ] 5. Fetch todos and display in a list",
-  "[ ] 6. Add create, complete, delete",
-  "[ ] 7. (Optional) Add login with JWT",
-  "[ ] 8. (Optional) Connect MongoDB",
+const learningPath = [
+  "1. Todo app (fullstack)     → learn CRUD + auth",
+  "2. Micro SaaS               → one feature, ship fast",
+  "3. E-Commerce               → products, cart, payments",
+  "4. Full SaaS                → dashboard, plans, billing",
 ];
 
 console.log("--- Build Checklist ---");
-console.log("Pick a project type:\n");
+console.log("Recommended learning path:\n");
+learningPath.forEach((step) => console.log(`  ${step}`));
+console.log("\nPick a project type:\n");
 projectTypes.forEach((p) => {
   console.log(`  ${p.type}`);
   console.log(`    Read: ${p.file}`);
-  console.log(`    Start: ${p.cmd}\n`);
+  console.log(`    Build: ${p.cmd}\n`);
 });
-console.log("Full-Stack todo app steps:");
-fullStackSteps.forEach((step) => console.log(step));
