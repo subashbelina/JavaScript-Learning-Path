@@ -16,7 +16,7 @@ You do not need to know JavaScript already. Start at `01-JavaScript Core fundame
 |------|------------|
 | 1 | Install [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/) and open this folder |
 | 2 | Open `01-JavaScript Core fundamentals/Data-types/string.js` |
-| 3 | Follow folders **01 → 02 → 03 → 04 → 05 → 06** in order |
+| 3 | Follow folders **01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09** in order |
 | 4 | Practice in the local `practice/` folder (not tracked by git) |
 
 **Optional — run a file in the terminal:**
@@ -28,6 +28,9 @@ node "02-Modern JavaScript/optional-chaining.js"
 node 03-React/intro.js
 node 05-Nodejs/intro.js
 node 06-Express/intro.js
+node 07-Database/intro.js
+node 08-Auth/intro.js
+node 09-TypeScript/intro.js
 ```
 
 **DOM basics — open in a browser:**
@@ -50,6 +53,9 @@ Js-Learning-Path/
 ├── 04-Next.js/                        ← Next.js framework
 ├── 05-Nodejs/                         ← Node.js runtime & backend
 ├── 06-Express/                        ← Express.js web framework
+├── 07-Database/                       ← SQL, MongoDB, CRUD
+├── 08-Auth/                           ← Login, JWT, protected routes
+├── 09-TypeScript/                     ← Types, interfaces, generics
 └── practice/                          ← Your experiments (local only)
 ```
 
@@ -61,6 +67,9 @@ Js-Learning-Path/
 | 04 | [Next.js](04-Next.js/README.md) | Routing, server components, API routes | 1–2 weeks |
 | 05 | Nodejs | Server-side JS, built-in modules, npm | 1–2 weeks |
 | 06 | Express | REST APIs, routing, middleware | 1 week |
+| 07 | Database | SQL, MongoDB, CRUD, relationships | 1 week |
+| 08 | Auth | Passwords, JWT, login, protected routes | 1 week |
+| 09 | TypeScript | Types, interfaces, generics | 1–2 weeks |
 
 ### 05 — Nodejs (read in this order)
 
@@ -124,6 +133,76 @@ node 06-Express/rest-api.js
 
 To run a real Express server: `mkdir practice/my-api && cd practice/my-api && npm init -y && npm install express`
 
+### 07 — Database (read in this order)
+
+Study **after** folder 06. Databases store data permanently for your API.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What a database is |
+| 2 | `sql-vs-nosql.js` | SQL tables vs MongoDB documents |
+| 3 | `sql-basics.js` | SELECT, INSERT, UPDATE, DELETE |
+| 4 | `mongodb-basics.js` | Collections and documents |
+| 5 | `connect.js` | Connection strings and drivers |
+| 6 | `crud-operations.js` | Create, read, update, delete |
+| 7 | `find-queries.js` | Filter, sort, limit |
+| 8 | `relationships.js` | Link users to posts |
+| 9 | `schema-validation.js` | Validate data before saving |
+
+```bash
+node 07-Database/intro.js
+node 07-Database/sql-basics.js
+node 07-Database/crud-operations.js
+```
+
+### 08 — Auth (read in this order)
+
+Study **after** folder 07. Secure your API with login and tokens.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | Authentication vs authorization |
+| 2 | `password-hashing.js` | Never store plain passwords |
+| 3 | `register.js` | Sign up flow |
+| 4 | `login.js` | Sign in and return token |
+| 5 | `jwt-basics.js` | JWT structure (header.payload.signature) |
+| 6 | `protected-routes.js` | Block access without token |
+| 7 | `sessions-vs-jwt.js` | Sessions vs JWT comparison |
+| 8 | `auth-middleware.js` | Auth middleware chain |
+| 9 | `env-secrets.js` | JWT_SECRET in .env file |
+
+```bash
+node 08-Auth/intro.js
+node 08-Auth/login.js
+node 08-Auth/jwt-basics.js
+node 08-Auth/protected-routes.js
+```
+
+### 09 — TypeScript (read in this order)
+
+Study **after** folders 01–03 (or anytime after JS basics). Used in most modern jobs.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What TypeScript is |
+| 2 | `basic-types.js` | string, number, boolean, array |
+| 3 | `interfaces.js` | Object shapes |
+| 4 | `functions.js` | Typed parameters and return |
+| 5 | `objects-arrays.js` | Typed collections |
+| 6 | `union-types.js` | string \| number, literal types |
+| 7 | `optional-readonly.js` | Optional props, readonly |
+| 8 | `generics.js` | Reusable types |
+| 9 | `react-typescript.js` | Typing React props and state |
+| 10 | `node-typescript.js` | Typing Express handlers |
+
+```bash
+node 09-TypeScript/intro.js
+node 09-TypeScript/basic-types.js
+node 09-TypeScript/interfaces.js
+```
+
+Real TypeScript: `npm install typescript && npx tsc --init` in `practice/`
+
 ### First-day path (folder 01)
 
 Work through **01-JavaScript Core fundamentals** using the full order in its [README](01-JavaScript%20Core%20fundamentals/README.md). A good start for day one:
@@ -150,7 +229,10 @@ Stop when your brain feels full. Come back tomorrow.
 | 03 — React | [04 — Next.js](04-Next.js/README.md) |
 | 04 — Next.js | Folder `05-Nodejs` (see README) |
 | 05 — Nodejs | Folder `06-Express` (see README) |
-| 06 — Express | Build a real API in `practice/` with `npm install express` |
+| 06 — Express | Folder `07-Database` (see README) |
+| 07 — Database | Folder `08-Auth` (see README) |
+| 08 — Auth | Folder `09-TypeScript` (see README) |
+| 09 — TypeScript | Build a full-stack app in `practice/` |
 
 ---
 
@@ -170,7 +252,7 @@ Every `.js` file follows the same pattern:
 4. Run the file and compare with your guess
 5. Change one value and run again
 
-React and Next.js files show **syntax reference** in comments — read them like a textbook. **05-Nodejs** and **06-Express** files are runnable with `node`, like folder 01.
+React and Next.js files show **syntax reference** in comments — read them like a textbook. Folders **05–09** are runnable with `node`, like folder 01.
 
 ---
 
@@ -235,6 +317,7 @@ main();
 - Next.js full-stack concepts
 - Node.js server-side JavaScript, built-in modules, and npm
 - Express REST APIs, routing, and middleware
+- Databases (SQL, MongoDB), auth (JWT), and TypeScript
 - DOM manipulation and async programming
 
 ---
@@ -249,7 +332,7 @@ main();
 
 ## Tips for New Developers
 
-- **Go in order.** Follow 01 → 02 → 03 → 04 → 05 → 06.
+- **Go in order.** Follow 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09.
 - **One file at a time.** Do not rush through a whole folder in one sitting.
 - **Type the code yourself.** Copy-pasting teaches less than typing and tweaking.
 - **Break things on purpose.** Change values, comment out lines, see what happens.
