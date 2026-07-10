@@ -25,6 +25,17 @@ React is a **JavaScript library for building user interfaces**. Study these file
 | 13 | `custom-hooks.js` | Reusable logic with hooks |
 | 14 | `fragments.js` | `<>...</>` without extra DOM nodes |
 
+### Optional — after your first React project
+
+Study these **after** the core files above (and building something real with Vite). Read in this order:
+
+| # | File | What you learn |
+|---|------|----------------|
+| 15 | `tanstack-query-intro.js` | Caching and server state with TanStack Query |
+| 16 | `fetch-patterns.js` | Loading, error, cleanup with fetch (manual approach) |
+| 17 | `when-to-use-state-library.js` | When Context is not enough |
+| 18 | `zustand-intro.js` | Simple global state with Zustand |
+
 ---
 
 ## Core Concepts
@@ -63,6 +74,12 @@ function Greeting({ name }) {          // props
 ```bash
 node 03-React/intro.js
 node 03-React/state.js
+
+# Optional (after first project)
+node 03-React/tanstack-query-intro.js
+node 03-React/fetch-patterns.js
+node 03-React/when-to-use-state-library.js
+node 03-React/zustand-intro.js
 ```
 
 ---

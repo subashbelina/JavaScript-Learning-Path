@@ -16,7 +16,7 @@ You do not need to know JavaScript already. Start at `01-JavaScript Core fundame
 |------|------------|
 | 1 | Install [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/) and open this folder |
 | 2 | Open `01-JavaScript Core fundamentals/Data-types/string.js` |
-| 3 | Follow folders **01 → 02 → … → 13** in order |
+| 3 | Follow folders **01 → 02 → … → 14** in order |
 | 4 | Practice in the local `practice/` folder (not tracked by git) |
 
 **Optional — run a file in the terminal:**
@@ -35,6 +35,7 @@ node 10-Projects/intro.js
 node 11-Git-GitHub/intro.js
 node 12-Testing/intro.js
 node 13-Deployment/intro.js
+node 14-Linux-Commands/intro.js
 ```
 
 **DOM basics — open in a browser:**
@@ -64,6 +65,7 @@ Js-Learning-Path/
 ├── 11-Git-GitHub/                     ← Version control workflow
 ├── 12-Testing/                        ← Jest and unit tests
 ├── 13-Deployment/                     ← Publish your app online
+├── 14-Linux-Commands/                 ← Terminal basics for developers
 └── practice/                          ← Your experiments (local only)
 ```
 
@@ -78,10 +80,11 @@ Js-Learning-Path/
 | 07 | Database | SQL, MongoDB, CRUD, relationships | 1 week |
 | 08 | Auth | Passwords, JWT, login, protected routes | 1 week |
 | 09 | TypeScript | Types, interfaces, generics | 1–2 weeks |
-| 10 | Projects | Full-stack todo app (ties 03–08 together) | 2 weeks |
+| 10 | Projects | Full-stack, e-commerce, SaaS guides | 2 weeks |
 | 11 | Git-GitHub | commit, branch, push, pull requests | 3–5 days |
 | 12 | Testing | Unit tests, mocks, Jest setup | 3–5 days |
 | 13 | Deployment | Vercel, Railway, go live | 3–5 days |
+| 14 | Linux Commands | pwd, ls, cd, grep, npm, daily workflow | 2–3 days |
 
 ### 05 — Nodejs (read in this order)
 
@@ -304,6 +307,31 @@ node 13-Deployment/intro.js
 node 13-Deployment/deploy-checklist.js
 ```
 
+### 14 — Linux Commands (read in this order)
+
+Study **after deployment**. Learn the terminal skills every developer uses daily.
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `intro.js` | What the terminal is and why you need it |
+| 2 | `navigation.js` | pwd, ls, cd — move around folders |
+| 3 | `files-folders.js` | mkdir, touch, cp, mv, rm |
+| 4 | `view-files.js` | cat, less, head, tail |
+| 5 | `search.js` | find, grep, locate |
+| 6 | `pipes-redirection.js` | \|, >, >>, && |
+| 7 | `permissions.js` | chmod, chown, whoami |
+| 8 | `processes.js` | ps, kill, top, jobs |
+| 9 | `networking.js` | curl, ping, ssh, scp |
+| 10 | `dev-commands.js` | node, npm, npx, git in terminal |
+| 11 | `daily-workflow.js` | Real dev day terminal routine |
+| 12 | `common-mistakes.js` | Typos and traps to avoid |
+
+```bash
+node 14-Linux-Commands/intro.js
+node 14-Linux-Commands/navigation.js
+node 14-Linux-Commands/daily-workflow.js
+```
+
 ### First-day path (folder 01)
 
 Work through **01-JavaScript Core fundamentals** using the full order in its [README](01-JavaScript%20Core%20fundamentals/README.md). A good start for day one:
@@ -337,7 +365,8 @@ Stop when your brain feels full. Come back tomorrow.
 | 10 — Projects | Folder `11-Git-GitHub` (see README) |
 | 11 — Git-GitHub | Folder `12-Testing` (see README) |
 | 12 — Testing | Folder `13-Deployment` (see README) |
-| 13 — Deployment | You are job-ready — keep building in `practice/`! |
+| 13 — Deployment | Folder `14-Linux-Commands` (see README) |
+| 14 — Linux Commands | You are job-ready — keep building in `practice/`! |
 
 ---
 
@@ -423,7 +452,7 @@ main();
 - Node.js server-side JavaScript, built-in modules, and npm
 - Express REST APIs, routing, and middleware
 - Databases (SQL, MongoDB), auth (JWT), and TypeScript
-- Full-stack projects, Git, testing, and deployment
+- Full-stack projects, Git, testing, deployment, and Linux terminal basics
 - DOM manipulation and async programming
 
 ---
@@ -438,7 +467,7 @@ main();
 
 ## Tips for New Developers
 
-- **Go in order.** Follow 01 → 02 → … → 13.
+- **Go in order.** Follow 01 → 02 → … → 14.
 - **One file at a time.** Do not rush through a whole folder in one sitting.
 - **Type the code yourself.** Copy-pasting teaches less than typing and tweaking.
 - **Break things on purpose.** Change values, comment out lines, see what happens.
