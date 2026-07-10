@@ -227,13 +227,16 @@ Study **after** folders 03–09. Build a todo app that combines everything.
 | 4 | `todo-with-auth.js` | Per-user todos |
 | 5 | `todo-react.js` | Frontend fetch pattern |
 | 6 | `full-stack-flow.js` | Browser → API → DB flow |
-| 7 | `project-structure.js` | Folder layout for real app |
-| 8 | `build-checklist.js` | Steps to build in practice/ |
+| 7 | `react-project-structure.js` | React + Vite folder layout |
+| 8 | `nextjs-project-structure.js` | Next.js App Router layout |
+| 9 | `fullstack-project-structure.js` | React + Express + database |
+| 10 | `build-checklist.js` | Steps to build in practice/ |
 
 ```bash
 node 10-Projects/intro.js
 node 10-Projects/todo-api.js
-node 10-Projects/full-stack-flow.js
+node 10-Projects/react-project-structure.js
+node 10-Projects/fullstack-project-structure.js
 ```
 
 ### 11 — Git-GitHub (read in this order)

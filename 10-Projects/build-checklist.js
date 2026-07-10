@@ -1,21 +1,32 @@
 /*
   Build Checklist
   ---------------
-  Steps to build your todo app in the practice/ folder.
+  Pick a project type and build in practice/.
 */
 
-const steps = [
-  "[ ] 1. Create practice/todo-app/server with npm init",
-  "[ ] 2. npm install express",
+const projectTypes = [
+  { type: "React only", file: "react-project-structure.js", cmd: "npm create vite@latest my-react-app -- --template react" },
+  { type: "Next.js", file: "nextjs-project-structure.js", cmd: "npx create-next-app@latest my-next-app" },
+  { type: "Full-Stack", file: "fullstack-project-structure.js", cmd: "Separate client/ + server/ folders" },
+];
+
+const fullStackSteps = [
+  "[ ] 1. Read fullstack-project-structure.js",
+  "[ ] 2. Create practice/todo-fullstack/server — npm init, npm install express",
   "[ ] 3. Build GET and POST /api/todos",
-  "[ ] 4. Test with curl or Postman",
-  "[ ] 5. Create practice/todo-app/client with Vite + React",
-  "[ ] 6. Fetch todos and display in a list",
-  "[ ] 7. Add form to create new todos",
-  "[ ] 8. Add toggle complete and delete",
-  "[ ] 9. (Optional) Add login with JWT",
-  "[ ] 10. (Optional) Connect MongoDB",
+  "[ ] 4. Create practice/todo-fullstack/client — Vite + React",
+  "[ ] 5. Fetch todos and display in a list",
+  "[ ] 6. Add create, complete, delete",
+  "[ ] 7. (Optional) Add login with JWT",
+  "[ ] 8. (Optional) Connect MongoDB",
 ];
 
 console.log("--- Build Checklist ---");
-steps.forEach((step) => console.log(step));
+console.log("Pick a project type:\n");
+projectTypes.forEach((p) => {
+  console.log(`  ${p.type}`);
+  console.log(`    Read: ${p.file}`);
+  console.log(`    Start: ${p.cmd}\n`);
+});
+console.log("Full-Stack todo app steps:");
+fullStackSteps.forEach((step) => console.log(step));
